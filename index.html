@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome To Ask.com">
+  <meta name="author" content="Abhijeet">
+
+  <title>WebAssignment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+</head>
+
+
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="offset-md-1"><a class="navbar-brand" href="#"><img src="image/logo.png" alt="logo" width="92px" height="70px"></a></div>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Out Team</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contact">Contacts</a></li>   
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+  <!--Banner-->
+<section class="header">
+    <div class="banner">
+      <img class="banner1" src="image/banner.jpg"  height="444px" width="100%" alt="BannerImg">
+      <div class="WelcomeTxt">
+        <p>Welcome To Our Home Page</p>
+        <button class="btn btn-light modalBtn " data-toggle="modal" data-target="#modalBtn" >Learn More</button>
+      </div>
+    </div>
+</section>  
+  
+ <!--Modal -->
+<div class="modal fade" id="modalBtn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modalMsg">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Message for you Geek</h1>
+      </div>
+      <div class="modal-body">
+        <p>Hey there!<br>You are a true Learner👍!<br>Mail us, What do you want to Learn</p>
+      </div>
+      <div class="modal-footer">      
+        <a href="mailto:prince.kumar@lngconsultancy.co.in"><button type="button" class="btn btn-primary">Send message</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About us -->
+<section id="about">
+  <div class="mainsection mt-5">
+    <h2>About Us</h2>
+  </div>
+    <div class="row mt-5 container-fluid" id="about">
+      <div class="col-md-6">
+        <iframe class="col-md-8 offset-md-3" src="https://www.youtube.com/embed/CX8ZybaPB5Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+      </div>
+      <div class="col-md-6">
+        <p class="col-md-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        </p>
+        <p class="mt-1 mx-3"><a class="learnMore" href="mailto:prince.kumar@lngconsultancy.co.in"><em>Learn More</em></a></p>  
+      </div>
+    </div>
+</section>
+
+<section id="contact">
+  <div class="mainsection mt-5" id="contact">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row mt-5 container-fluid">
+    <div class="col-md-6">
+        <form class="col-md-8 offset-md-3">
+          <div class="form-group">
+            <label for="please enter your name">Name</label>
+            <input  type="text" required class="form-control inputArea" id="name" aria-describedby="nameHelp" placeholder="please enter your name">
+          </div>
+          <div class="form-group">
+            <label for="please enter your email">Email</label>
+            <input type="email" required class="form-control inputArea" id="exampleInputPassword1" placeholder="please enter your mail">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea required class="form-control inputArea" rows="3" id="message"></textarea>
+          </div>          
+          <button type="submit" onclick="show()" class="btn btn-danger submit">Submit</button>
+        </form>      
+    </div>
+    <div class="col-md-6 mt-3">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.2901344813!2d82.84774923631262!3d25.320693313840465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678863743273!5m2!1sen!2sin" title="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="pt-2 pb-3 mt-5">
+  <p>Copyright 2023 by Ask.Com.All rights reserved</p>
+</footer>
+
+
+<script type="text/javascript">
+  function show() {
+    let name = $('#name').val();
+    if (name=='') {
+      alert('Please Fill the details!')
+    }else{
+      alert('Hello '+ name+'\nyour message is sent!');
+    }
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>.
